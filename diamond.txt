@@ -1,0 +1,26 @@
+--------------LOCAL-----------------------------
+git init << Initialise local Git repository
+
+
+git add . << Add all modified files
+
+
+git commit -a -m 'comment' << Commit all modified files with an obligatory comment
+
+
+--------------SERVER-----------------------------
+
+
+if(first-time == true) {
+        git remote add origin <url-to-git-repository>  << Add the remote repository URL in your local Git
+        git push -u origin master << Initial upload of all your codes into Github
+}
+else {
+        git push << Subsequent upload of all your codes into Github
+        git pull << Update local repository
+}
+
+
+---------------USEFUL COMMANDS--------------------
+git status << Check Git local and remote (if exist) for modifications or commit branch
+git diff << Look at difference between previous commit and current modifications, no response if exactly the same
