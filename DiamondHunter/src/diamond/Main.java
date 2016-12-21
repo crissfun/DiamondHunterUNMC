@@ -14,9 +14,10 @@ package diamond;
 		@Override
 		public void start(Stage primaryStage) {
 			try {
-				Parent root = FXMLLoader.load(getClass().getResource("/diamond/UI.FXML"));
+				Parent root = FXMLLoader.load(getClass().getResource("/diamond/UI.fxml"));
 				Scene scene = new Scene(root,845,500);
 				scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+				primaryStage.setTitle("[ Map Viewer ]");
 				primaryStage.setScene(scene);
 				primaryStage.show();
 			} catch(Exception e) {
